@@ -1,0 +1,30 @@
+{
+    "name" : "nihl/weatherreport",
+    "description": "Anax weather module",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Anax\\": "src/",
+            "Nihl\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "anax/anax-cli": "^1.2",
+        "anax/cache": "^2.0",
+        "anax/commons": "^2.0.0@alpha",
+        "anax/configure": "^2.0.0@alpha",
+        "anax/controller": "^2.0.0@alpha",
+        "anax/di": "^2.0.0@alpha",
+        "anax/page": "^2.0.0@beta",
+        "anax/request": "^2.0.0@beta",
+        "anax/response": "^2.0.0@beta",
+        "anax/view": "^2.0.0@beta",
+        "anax/url": "^2.0.0@alpha"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
