@@ -27,6 +27,8 @@ class IPValidatorSetupTest extends TestCase
         // Create the di container and load services
         $di = new DIFactoryConfig();
         $di->loadServices(ANAX_INSTALL_PATH . "/config/di");
+        $di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
+
         $di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
 
         $model = $di->get("ipvalidator");

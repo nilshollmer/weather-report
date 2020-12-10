@@ -13,7 +13,7 @@ Install this module into your existing Anax installation using composer.
 Integrate it by copying the configuration using the following command:
 ```
 # Root of your Anax based repository
-rsync -av vendor/nihl/weatherreport/config ./
+rsync -av vendor/nihl/weatherreport/config/ /config
 ```
 
 Add a configuration file with your apikeys for ipstack and openweathermap:
@@ -38,4 +38,4 @@ This is a Anax module and its usage is primarly intended to be together with the
 
 You can install an instance on [anax/anax](https://github.com/canax/anax) and run this module inside it, to try it out for test and development.
 
-The repo "[my redovisa-page](https://github.com/nilshollmer/me-redovisa)" is an example of how that can be done.
+The repo "[my redovisa-page](https://github.com/nilshollmer/redovisning-ramverk1)" is an example of how that can be done.

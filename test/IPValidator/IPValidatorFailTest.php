@@ -19,6 +19,8 @@ class IPValidatorFailTest extends TestCase
         // Create the di container and load services
         $this->di = new DIFactoryConfig();
         $this->di->loadServices(ANAX_INSTALL_PATH . "/config/di");
+        $this->di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
+        
         $this->di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
 
         $this->model = $this->di->get("ipvalidator");

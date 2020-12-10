@@ -19,6 +19,8 @@ class GeotagUsageTest extends TestCase
         // Create the di container and load services
         $this->di = new DIFactoryConfig();
         $this->di->loadServices(ANAX_INSTALL_PATH . "/config/di");
+        $this->di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
+
         $this->di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
         // Set mock as service in the di replacing the original class
         $this->di->setShared("curl", "\Nihl\RemoteService\CurlGeotagMock");

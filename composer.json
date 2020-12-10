@@ -11,7 +11,10 @@
         }
     },
     "require": {
-        "php": "^7.2",
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
         "anax/anax-cli": "^1.2",
         "anax/cache": "^2.0",
         "anax/commons": "^2.0.0@alpha",
@@ -23,8 +26,5 @@
         "anax/response": "^2.0.0@beta",
         "anax/view": "^2.0.0@beta",
         "anax/url": "^2.0.0@alpha"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^7"
     }
 }
