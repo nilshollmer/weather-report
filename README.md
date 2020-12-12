@@ -50,16 +50,11 @@ config/apikeys.php
 
 **5:**  
 The weatherreport module is now available in your Anax installation.  
-Copy the following code to add it to your navbar
+Add it to your navbar with the following code:
 ```
 # config/navbar/header
 return [
     "items" => [
-        [
-            "text" => "Home",
-            "url" => "",
-            "title" => "First page",
-        ],
         ...
         [
             "text" => "Weather",
