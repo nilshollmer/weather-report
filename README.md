@@ -7,29 +7,76 @@ The module is designed to be used with external services [ipstack](https://ipsta
 
 ## Installation
 
+**1:**  
 Install this module into your existing Anax installation using composer.  
 `composer require nihl/weatherreport`
 
+**2:**  
 Integrate it by copying the configuration using the following command:
 ```
 # Root of your Anax based repository
-rsync -av vendor/nihl/weatherreport/config/ /config
+rsync -av vendor/nihl/weatherreport/config ./
+
+rsync -av vendor/nihl/weatherreport/view ./
+
+rsync -av vendor/nihl/weatherreport/test ./
+
+# If you want to edit the source code you can also copy the src-catalogue
+rsync -av vendor/nihl/weatherreport/src ./
 ```
 
+**3:**  
+Sign up for an account at [ipstack](https://ipstack.com/) and [openweathermap](https://openweathermap.org/api).
 Add a configuration file with your apikeys for ipstack and openweathermap:
-`touch config/apikeys.php`  
 ```
-# apikeys.php
+# Root of your Anax based repository
+touch config/apikeys.php
+```  
+```
+# config/apikeys.php
 
 return $apikeys = [
     "ipstack" => "your_ipstack_apikey",
     "openweather" => "your_openweathermap_apikey"
 ];
-
-```
-## Routes
 ```
 
+**4:**  
+Add your apikey-configuration file to your `.gitignore`.
+```
+# .gitignore
+config/apikeys.php
+```
+
+**5:**  
+The weatherreport module is now available in your Anax installation.  
+Copy the following code to add it to your navbar
+```
+# config/navbar/header
+return [
+    "items" => [
+        [
+            "text" => "Home",
+            "url" => "",
+            "title" => "First page",
+        ],
+        ...
+        [
+            "text" => "Weather",
+            "url" => "weatherreport",
+            "title" => "Weather report",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Rest API",
+                        "url" => "weatherreport/api",
+                        "title" => "Weather report-API"
+                    ],
+                ],
+            ],
+        ],
+    ],
+];
 ```
 
 ## Dependency
