@@ -41,4 +41,24 @@ class CurlUsageTest extends TestCase
         $exp = null;
         $this->assertEquals($exp, $res);
     }
+
+    public function testDoMultiRequest()
+    {
+        $urls = [
+            "file:///" . __DIR__ . "/data/mcurl1.json",
+            "file:///" . __DIR__ . "/data/mcurl2.json",
+            "file:///" . __DIR__ . "/data/mcurl3.json"
+        ];
+        $res = $this->model->doMultiRequest($urls);
+        // $res = json_decode($data, true);
+
+        $exp = "test 1 success";
+        $this->assertEquals($exp, $res[0]['test']);
+
+        $exp = "test 2 success";
+        $this->assertEquals($exp, $res[1]['test']);
+
+        $exp = "test 3 success";
+        $this->assertEquals($exp, $res[2]['test']);
+    }
 }

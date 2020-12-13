@@ -19,6 +19,7 @@ rsync -av vendor/nihl/weatherreport/config ./
 
 rsync -av vendor/nihl/weatherreport/view ./
 
+# If you want to test the source code you can also copy the test-catalogue
 rsync -av vendor/nihl/weatherreport/test ./
 
 # If you want to edit the source code you can also copy the src-catalogue
