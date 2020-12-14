@@ -35,12 +35,12 @@ class WeatherReportUsageTest extends TestCase
 
     public function testGetDatetime()
     {
-        $d = new \DateTime("2020-02-20", new \DateTimeZone('Europe/Berlin'));
-        $this->model->setCurrentDateTime($d);
+        $newDate = new \DateTime("2020-02-20", new \DateTimeZone('Europe/Berlin'));
+        $this->model->setCurrentDateTime($newDate);
 
         $res = $this->model->getDateTime();
 
-        $this->assertEquals($d, $res);
+        $this->assertEquals($newDate, $res);
     }
 
 
@@ -60,9 +60,9 @@ class WeatherReportUsageTest extends TestCase
 
     public function testBuildWeatherHistoryUrls()
     {
-        $d = new \DateTime("2020-02-20", new \DateTimeZone('Europe/Berlin'));
+        $newDate = new \DateTime("2020-02-20", new \DateTimeZone('Europe/Berlin'));
 
-        $urls = $this->model->buildWeatherHistoryUrls(1, 2, $d, "12345");
+        $urls = $this->model->buildWeatherHistoryUrls(1, 2, $newDate, "12345");
         $exp = [
             "http://testurl.com/onecall/timemachine?lat=1&lon=2&lang=se&units=metric&appid=12345&dt=1582066800",
             "http://testurl.com/onecall/timemachine?lat=1&lon=2&lang=se&units=metric&appid=12345&dt=1581980400",
