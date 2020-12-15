@@ -5,7 +5,9 @@
 
 require __DIR__ . "/apikeys.php";
 
+$apikey = $apikeys["ipstack"] ?? "";
+
 return [
     "url" => "http://api.ipstack.com",
-    "apikey" => $apikeys["ipstack"]
+    "apikey" => $apikey
 ];
