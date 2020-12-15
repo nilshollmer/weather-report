@@ -28,11 +28,8 @@ rsync -av vendor/nihl/weatherreport/src ./
 
 **3:**  
 Sign up for an account at [ipstack](https://ipstack.com/) and [openweathermap](https://openweathermap.org/api).
-Add a configuration file with your apikeys for ipstack and openweathermap:
-```
-# Root of your Anax based repository
-touch config/apikeys.php
-```  
+Update apikey-configuration file with your apikeys for ipstack and openweathermap:
+
 ```
 # config/apikeys.php
 
