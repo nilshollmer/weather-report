@@ -1,6 +1,18 @@
 Revision History
 ===================
 
+v1.1.0 (2020-12-16)
+-------------------
+
+* Added Travis CI, Circle CI, Scrutinizer and Gitter chat
+
+v1.0.2 (2020-12-13)
+-------------------
+
+* Add multicurl test
+
+
+
 v1.0.2 (2020-12-13)
 -------------------
 
