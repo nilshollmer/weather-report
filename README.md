@@ -2,8 +2,8 @@
 [![Build Status](https://travis-ci.com/nilshollmer/weather-report.svg?branch=main)](https://travis-ci.com/nilshollmer/weather-report)
 [![CircleCI](https://circleci.com/gh/nilshollmer/weather-report.svg?style=svg)](https://app.circleci.com/pipelines/github/nilshollmer/weather-report)
 [![Join the chat at https://gitter.im/nilshollmer/weather-report](https://badges.gitter.im/nilshollmer/weather-report.svg)](https://gitter.im/nilshollmer/weather-report?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![Join the chat at https://gitter.im/nilshollmer/weather-report](https://badges.gitter.im/nilshollmer/weather-report.svg)](https://gitter.im/nilshollmer/weather-report?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilshollmer/weather-report/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/nilshollmer/weather-report/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/nilshollmer/weather-report/badges/build.png?b=main)](https://scrutinizer-ci.com/g/nilshollmer/weather-report/build-status/main)
 
 Anax weather report module for fetching and displaying weather prognosis data.
 
