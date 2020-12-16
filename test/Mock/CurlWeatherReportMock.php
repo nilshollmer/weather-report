@@ -37,7 +37,7 @@ class CurlWeatherReportMock extends Curl
 
     public function doMultiRequest(array $urls)
     {
-        $data = [];
+        $data = array();
         $data[] = <<<EOD
         {"lat":33.69,"lon":-117.79,"timezone":"America/Los_Angeles","timezone_offset":-28800,"current":{"dt":1606980555,"sunrise":1606919957,"sunset":1606956167,"temp":17.94,"feels_like":12.86,"pressure":1018,"humidity":11,"dew_point":-11.55,"uvi":2.65,"clouds":1,"visibility":16093,"wind_speed":2.6,"wind_deg":50,"weather":[{"id":800,"main":"Clear","description":"klar himmel","icon":"01n"}]}}
         EOD;
