@@ -1,5 +1,7 @@
 # Weather report
 
+[![Join the chat at https://gitter.im/nilshollmer/weather-report](https://badges.gitter.im/nilshollmer/weather-report.svg)](https://gitter.im/nilshollmer/weather-report?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Anax weather report module for fetching and displaying weather prognosis data.
 
 The module is designed to be used with external services [ipstack](https://ipstack.com/) and [openweathermap](https://openweathermap.org/api).
